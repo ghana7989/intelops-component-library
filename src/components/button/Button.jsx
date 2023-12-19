@@ -1,7 +1,7 @@
 import React from 'react';
 import { clsxMerge } from '../../common/utils/classNameUtils';
 import { buttonStyles } from './helpers';
-
+import PropTypes from 'prop-types';
 export default function Button({
   className,
   buttonType,
@@ -28,3 +28,14 @@ export default function Button({
     </button>
   );
 }
+
+Button.propTypes = {
+  className: PropTypes.string,
+  buttonType: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  rounded: PropTypes.bool,
+  label: PropTypes.string,
+  rightIcon: PropTypes.node,
+  spacing: PropTypes.oneOf(['compact', 'normal', 'spacious']),
+  leftIcon: PropTypes.node,
+};

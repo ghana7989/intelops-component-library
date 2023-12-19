@@ -4,7 +4,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
+  ],
+  ignorePatterns: ['node_modules', 'dist'],
   overrides: [
     {
       env: {
