@@ -9,7 +9,7 @@ export const buttonStyles = cva(
     variants: {
       buttonType: {
         primary:
-          'bg-violet-500 text-white border-violet-500 hover:bg-violet-600',
+          'bg-orange-500 text-white border-orange-500 hover:bg-orange-600',
         secondary:
           'bg-gray-200 text-gray-600 border-gray-200 hover:bg-gray-300',
         warning:
